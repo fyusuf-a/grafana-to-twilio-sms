@@ -14,4 +14,4 @@ docker-compose -d up
 
 Then set up a new notification channel in Grafana as such:
 
-![Screeshot from Grafana](https://github.com/fyusuf-a/grafana-to-twilio-sms/grafana.png)
+![Screeshot from Grafana](https://raw.githubusercontent.com/fyusuf-a/grafana-to-twilio-sms/master/grafana.png)
