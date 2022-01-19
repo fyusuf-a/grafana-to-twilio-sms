@@ -1,9 +1,15 @@
 version: "3.9"
 services:
-    proxy:
+    sms-proxy:
         build: .
         ports:
             - "3030:80"
         volumes:
             - ./sms_proxy.py:/sms_proxy.py
             - ./.env:/.env
+        restart: unless-stopped
+        networks:
+          - sms-proxy-network
+
+networks:
+  sms-proxy-network:
